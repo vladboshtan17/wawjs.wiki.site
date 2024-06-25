@@ -1,0 +1,100 @@
+.l-support-wrapper {
+	padding: 92px 30px;
+	background: var(--c-bg-extra);
+	position: relative;
+}
+.l-support-web {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25%;
+    z-index: 1;
+    &._right {
+    	right: 0;
+    	left: inherit;
+	    bottom: 0;
+	    top: inherit;
+	    transform: rotate(180deg);
+    }
+}
+.l-support {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.l-support-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 198.4%;
+	color: var(--c-focus);
+    width: 100%;
+	max-width: 725px;
+	margin: 0 auto 5px;
+	@include bp-max(md) {
+		display: none;
+	}
+}
+.l-support-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 198.4%;
+	color: var(--c-text-w-d);
+    width: 100%;
+	max-width: 725px;
+	margin: 0 auto 60px;
+	@include bp-max(md) {
+		display: none;
+	}
+}
+
+// owl slider
+.l-owl-item {
+	text-align: center;
+	color: var(--c-text-w-d);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 452px;
+	padding: 53px 0;
+	* {
+		cursor: pointer;
+	}
+}
+.l-owl-price {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 200%;
+	margin-top: 10px;
+}
+.l-owl-price-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 200%;
+}
+.l-owl-text {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 200%;
+	max-width: 156px;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.l-owl-label {
+	width: 156px;
+	height: 35px;
+	background: var(--c-focus);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--c-text);
+	font-weight: 500;
+	font-size: 14px;
+}

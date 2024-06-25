@@ -1,0 +1,303 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+	line-height: 20px;
+   color: #000000;
+	background: #F5F5F5;
+}
+
+p {
+   margin: 0;
+	margin-bottom: 16px;
+}
+
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.text-link {
+	text-decoration: none;
+	color: #F4C635;
+}
+
+
+.header {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.header__support {
+	text-align: center;
+	background: #000000;
+	padding: 12px 10px;
+}
+
+.header__support-link {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+
+
+.menu {
+	background: #1C1C1C;
+}
+
+.menu__inner {
+	max-width: 1075px;
+	margin: 0 auto;
+	padding: 12px 10px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__list {
+	display: flex;
+	list-style: none;
+}
+
+.menu__search {
+	margin-left: auto;
+	position: relative;
+	display: flex;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+	width: 220px;
+	padding: 2px 0;
+}
+
+.menu__search-img {
+	cursor: pointer;
+}
+
+.menu__search-input {
+	width: 100%;
+	background: inherit;
+	border: none;
+	padding: 0 9px;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.menu__search-input:focus {
+	outline: none;
+}
+
+.menu__list {
+	margin-left: 44px;
+}
+
+.menu__list-item + .menu__list-item {
+	margin-left: 18px;
+}
+
+.menu__list-item {
+	padding: 5px 8px;
+	border-radius: 10px;
+}
+
+.menu__list-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu__list-item:hover {
+	background-color: #F4C635;
+}
+
+
+
+.content img {
+	border-radius: 5px;
+}
+
+.introduction, 
+.philosophy, 
+.installation {
+	margin-bottom: 64px;
+}
+
+.introduction {
+	padding-top: 70px;
+}
+
+.alternatives {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #E9E9E9;
+}
+
+.alternatives__img {
+	margin-bottom: 34px;
+}
+
+.alternatives__img:last-child {
+	margin-bottom: 0;
+}
+
+.alternatives-paragraph {
+	margin-bottom: 30px;
+}
+
+.alternatives__text p:last-child {
+	margin-bottom: 30px;
+}
+
+.hint {
+	width: 100%;
+	background: rgba(255, 217, 97, 0.2);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 16px 24px;
+	margin-bottom: 30px;
+	border-left: 7px solid #F4C635 ;
+}
+
+.hint__title {
+	color: #F4C635;
+}
+
+
+
+.support {
+	padding: 52px 0 57px;
+}
+
+.support__text {
+	display: inline-block;
+	margin-bottom: 57px;
+}
+
+.support__link {
+	text-align: center;
+}
+
+.support__sponsor-link {
+   padding: 20px 48px;
+   background: #F4C635;
+   border-radius: 50px;
+   line-height: 198.4%;
+   text-decoration: none;
+   color: #000000;
+}
+
+
+
+.footer {
+   padding-bottom: 41px;
+}
+
+.footer__inner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer__newsletter {
+   background: rgba(217, 217, 217, 0.4);
+   margin-bottom: 90px;
+   color: #000;
+	font-family: 'Montserrat', sans-serif;
+   width: 100%;
+}
+
+.footer__newsletter-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 51px;
+   padding-bottom: 68px;
+}
+
+.footer__newsletter-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__newsletter-email {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.footer__newsletter-icon {
+	position: absolute;
+	border-radius: 0px !important;
+	right: 16px;
+}
+
+.footer__newsletter-input {
+   all: unset;
+   box-sizing:border-box;
+   padding: 10px 40px 10px 16px;
+   max-height: 33px;
+   width: 264px;
+   background: #fff;
+	border-radius: 30px;
+}
+
+.footer__newsletter-input[type=text] {
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 198.4%;
+	color: #F4C635;
+}
+
+.footer__newsletter-title {
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 198.4%;
+}
+
+.footer__newsletter-text {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 198.4%;
+}
+
+.footer__newsletter-input::placeholder {
+   color: #F4C635;
+}
+
+.socials__item + .socials__item {
+   margin-left: 54px;
+}
+
+.footer__socials {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   margin-bottom: 16px;
+}
+
+.footer__copyright {
+   max-width: 318px;
+   text-align: center;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 198.4%;
+	color: rgba(0, 0, 0, 0.25);
+}

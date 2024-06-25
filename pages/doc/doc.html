@@ -1,0 +1,45 @@
+<header class="l-head-wrapper">
+	<div class="l-container">
+		<div class="l-head">
+			<div class="l-head_left">
+				<div class="l-head-title">I am here to connect with you</div>
+				<div class="l-head-text">I am very logical creature, below you will see everything you need to know to work with me</div>
+				<div class="l-head-btns">
+					<a href="/docs#start" class="l-btn _docs">Let's start</a>
+				</div>
+			</div>
+			<div class="l-head_right">
+				<img src="/wiki/img/logo.svg" alt="logo">
+			</div>
+		</div>
+	</div>
+</header>
+<div>
+	<!-- Sidebar -->
+	<!-- {% for menu in menus %}
+		{% if menu.url %}
+			<a href="{{{menu.url}}}">{{{ menu.name }}}</a>
+		{% endif %}
+		{% if !menu.url %}
+			<span>{{{ menu.name }}}</span>
+		{% endif %}
+		{% if menu.children %}
+			{% for child in menu.children %}
+				<a href="{{{child.url}}}">{{{ child.name }}}</a>
+			{% endfor %}
+		{% endif %}
+	{% endfor %} -->
+</div>
+<!--
+<div>
+	<h1>{{{head}}}</h1>
+	<div>{{{content|safe}}}</div>
+</div>
+-->
+<section class="description">
+	<div class="container">
+		<div class="description__inner">
+			{{{content|safe}}}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,139 @@
+.l-navs-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 8px 30px;
+	z-index: 1;
+}
+.l-navs {
+	display: flex;
+	align-items: center;
+}
+.l-navs-logo {
+	img {
+		cursor: pointer;
+		height: 84px;
+		width: auto;
+	}
+}
+.l-navs-menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 1;
+	@include bp-max(md) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 60px 40px;
+		background: linear-gradient(72.44deg, rgba(134, 143, 150, 0.9) 0%, rgba(89, 97, 100, 0.9) 100%);
+		margin-left: -100vw;
+	}
+	&._active {
+		@include bp-max(md) {
+			margin-left: 0;
+		}
+	}
+}
+.l-navs-link {
+	cursor: pointer;
+	color: var(--c-text-w-d);
+	transition: all 0.2s ease;
+	margin-left: 40px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	&:hover {
+		color: var(--c-focus);
+	}
+	@include bp-max(md) {
+		margin-bottom: 40px;
+		margin-left: 0;
+	}
+}
+.l-navs-soc {
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	@include bp-max(md) {
+		margin-left: 0;
+	}
+}
+.l-navs-icon {
+	margin-left: 40px;
+	i {
+		font-size: 32px;
+		color: var(--c-text-w-d);
+		transition: all 0.2s ease;
+	}
+	* {
+		cursor: pointer;
+	}
+	&:hover {
+		i {
+			color: var(--c-focus);
+		}
+	}
+	@include bp-max(md) {
+		margin-right: 40px;
+		margin-left: 0;
+	}
+}
+.menu-icon {
+	display: none;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 35px;
+  * {
+  	cursor: pointer;
+  }
+  &:hover {
+  	span {
+  		color: var(--c-text-w) !important;
+  	}
+  }
+  @include bp-max(md){
+  	display: inline-block;
+  }
+}
+.menu-icon span {
+	background-color: var(--c-text-w-d);
+	height: 6px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+.menu-icon span:first-child {
+  top: 0;
+}
+.menu-icon span:nth-child(2) {
+  top: 12px;
+}
+.menu-icon span:last-child {
+  top: 24px;
+}
+.menu-icon._active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon._active span:first-child,
+.menu-icon._active span:last-child {
+  top: 6px;
+}
+.menu-icon._active span:first-child {
+  transform: rotate(45deg);
+}
+.menu-icon._active span:last-child {
+  transform: rotate(-45deg);
+}

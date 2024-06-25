@@ -1,0 +1,38 @@
+.l-footer-wrapper {
+	padding: 72px 30px;
+}
+.l-footer {
+	color: var(--c-text-w-d);
+	// width: 230px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 200%;
+	font-family: $ff-trash;
+	@include bp-max(sm) {
+		margin: auto;
+	}
+}
+.l-footer-social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	a {
+		i {
+			font-size: 32px;
+			color: var(--c-text-w-d);
+			transition: all 0.2s ease;
+		}
+		* {
+			cursor: pointer;
+		}
+		&:hover {
+			i {
+				color: var(--c-focus);
+			}
+		}
+	}
+	a+a {
+		margin-left: 54px;
+	}
+}

@@ -1,0 +1,75 @@
+.l-learnmore-wrapper {
+	background: url('/wiki/img/landing/l-info-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&:before, &:after {
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+		content: '';
+		height: 80px;
+		width: 100%;
+		background-repeat: no-repeat;
+	}
+	&:before {
+		background: url('/wiki/img/landing/l-info-bg-t.png');
+		background-size: cover;
+	}
+	&:after {
+		top: 100%;
+		bottom: inherit;
+		transform: scale(-1);
+		background: url('/wiki/img/landing/l-info-bg-t.png');
+		background-size: cover;
+	}
+}
+.l-learnmore {
+	padding: 180px 0;
+	display: flex;
+	img {
+		margin-right: 76px;
+		@include bp-max(md) {
+			display: none;
+		}
+	}
+	&_title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 200%;
+		color: var(--c-focus);
+		margin-bottom: 40px;
+		margin-top: 70px;
+	}
+	&_text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 200%;
+		color: var(--c-text-w-d);
+		margin-bottom: 40px;
+	}
+	&_btn {
+		display: inline-flex;
+		align-items: center;
+		padding: 14px 25px;
+		color: var(--c-text);
+		background: var(--c-focus);
+		border-radius: 30px;
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 18px;
+		transition: all 0.25s ease;
+		border: 2px solid transparent;
+		&:hover, &:focus {
+			border: 2px solid var(--c-text-w-d);
+			background: transparent;
+			color:var(--c-text-w-d);
+		}
+		@include bp-max(sm) {
+			padding: 14px 10px;
+		}
+	}
+	@include bp-max(md) {
+		text-align: center;
+	}
+}

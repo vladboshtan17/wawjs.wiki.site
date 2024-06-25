@@ -1,0 +1,502 @@
+
+
+p {
+   margin: 0;
+}
+
+.container {
+   max-width: 1192px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+
+
+.header {
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.header::before {
+   content: '';
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   background-color: #000;
+   z-index: -1;
+}
+
+.header::after {
+   content: '';
+   height: 100%;
+   width: 56%;
+   position: absolute;
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 54.41%, #050505 100%), url('/wiki/img/header-spider.png');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   z-index: -1;
+   top: 0;
+}
+
+.header__inner {
+   display: flex;
+   align-items: center;
+   padding-top: 30px;
+}
+
+
+
+.socials {
+   display: flex;
+   margin-right: auto;
+}
+
+.socials__item + .socials__item {
+   margin-left: 54px;
+}
+
+
+
+.menu {
+   margin-right: 180px;
+}
+
+.menu__list {
+   display: flex;
+   list-style: none;
+}
+
+.menu__list-item + .menu__list-item {
+   margin-left: 48px;
+}
+
+.menu__list-link {
+   text-decoration: none;
+   color: #FFFFFF;
+   font-weight: 700;
+   line-height: 20px;
+}
+
+
+
+.welcome {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 140px;
+}
+
+.welcome__inner {
+   max-width: 572px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   color: #FFFFFF;
+   text-align: right;
+}
+
+.welcome__title {
+   font-weight: 700;
+   font-size: 55px;
+   line-height: 67px;
+   margin-bottom: 20px;
+}
+
+.welcome__text {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 198.4%;
+   margin-bottom: 108px;
+}
+
+.welcome__links {
+   max-width: 472px;
+   display: flex;
+}
+
+.welcome__link {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: #FFFFFF;
+   font-size: 18px;
+   max-height: 54px;
+   max-width: 228px;
+   border-radius: 30px;
+}
+
+.documentation {
+   color: #060606;
+   background: #F6C93C;
+   box-shadow: 0px 2px 10px #F4C635;
+   padding: 16px 42px;
+   margin-right: 16px;
+}
+
+.source-code {
+   justify-content: space-between;
+   border: 1px solid #FFFFFF;
+   padding: 16px 37px;
+}
+
+.source-code__img {
+   margin-right: 8px;
+}
+
+
+.dev-kit {
+   padding-top: 70px;
+   padding-bottom: 158px;
+   position: relative;
+   overflow: hidden;
+}
+
+.dev-kit::before {
+   content: '';
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   background-color: #F4C635;
+   z-index: -1;
+}
+
+.dev-kit::after {
+   content: '';
+   height: 100%;
+   width: 40%;
+   position: absolute;
+   background-image: linear-gradient(90deg, #F4C635 0%, rgba(246, 201, 60, 0.09) 33.65%), url('/wiki/img/platform-spider.png');
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+   z-index: -1;
+   top: 0;
+   right: 0;
+}
+
+.dev-kit__about {
+   max-width: 668px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   line-height: 198.4%;
+}
+
+.dev-kit__about-title {
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 198.4%;
+}
+
+.dev-kit__about-text {
+   font-size: 18px;
+   margin-bottom: 70px;
+}
+
+.dev-kit__about-link {
+   color: #000000;
+   text-decoration: none;
+   padding: 16px 42px;
+   max-width: 372px;
+   background-color: #FFFFFF;
+   border-radius: 30px;
+}
+
+
+
+.preview__inner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #FFFFFF;
+   text-align: center;
+   line-height: 198.4%;
+}
+
+.preview__title {
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 198.4%;
+}
+
+.preview__text {
+   max-width: 568px;
+   margin-bottom: 100px;
+}
+
+.preview__img {
+   height: 538px;
+   width: 1027px;
+}
+
+
+
+.support {
+   position: relative;
+   overflow: hidden;
+   padding-top: 95px;
+   padding-bottom: 40px;
+}
+
+.support::before {
+   content: '';
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   background-color: #FFFEF9;
+   z-index: -1;
+}
+
+.support::after {
+   content: '';
+   height: 100%;
+   width: 40%;
+   position: absolute;
+   background-image: linear-gradient(90deg, #FFFEF9 0%, rgba(217, 217, 217, 0) 100%), url('/wiki/img/support-web.png');
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+   z-index: -1;
+   top: 0;
+   right: 0;
+}
+
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+   background: inherit;
+}
+
+.owl-prev {
+   position: absolute;
+   top: 33%;
+   left: -58px;
+   display: block !important;
+   border:0px solid black;
+}
+
+.owl-next {
+   position: absolute;
+   top: 33%;
+   right: -58px;
+   display: block !important;
+   border:0px solid black;
+}
+
+
+.support__inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   line-height: 198.4%;
+}
+
+.support__title {
+   font-weight: 700;
+   font-size: 36px;
+   color: #F4C635;
+   margin-bottom: 25px;
+   line-height: 198.4%;
+}
+
+.support__text {
+   max-width: 725px;
+   margin-bottom: 30px;
+}
+
+.support__items {
+   display: flex;
+   max-width: 768px;
+}
+
+.support__item {
+   height: 452px;
+   width: 256px;
+   padding: 52px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 14px;
+   line-height: 198.4%;
+   text-align: center;
+}
+
+.support__item:hover {
+   color: #FFFFFF;
+   background: linear-gradient(330.56deg, #FFA51D 26.87%, #FFD961 80.52%);
+   box-shadow: 4px 6px 50px rgba(255, 165, 29, 0.5);
+   transition: all .3s;
+}
+
+.support__item-tag {
+   width: 92px;
+   background-color: #F6C93C;
+   border-radius: 30px;
+   margin-bottom: 34px;
+}
+
+.support__item-tag:hover {
+   background: #FFFFFF;
+   color: #FFA51D;
+}
+.support__item-title {
+   font-weight: 700;
+   font-size: 32px;
+   margin-bottom: 42px;
+}
+
+.support__item-price {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 7px;
+}
+
+.price {
+   font-weight: 600;
+   font-size: 32px;
+   margin-bottom: 7px;
+}
+
+.support__item-text {
+   max-width: 132px;
+}
+
+.premium-text {
+   max-width: 200px;
+}
+
+.support__item-link {
+   text-decoration: none;
+   color: #000000;
+   padding: 4px 0px;
+   width: 156px;
+   background: linear-gradient(286.55deg, #FFA51D 17.48%, #FFD961 77.98%);
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+   border-radius: 30px;
+   display: inline-block;
+   margin-top: auto;
+}
+
+.support__item:hover .support__item-link {
+   color: #FFFFFF;
+   background: none;
+   box-shadow: none;
+   padding: 3px 0px;
+   border: 1px solid #FFFFFF;
+}
+
+
+
+
+.footer {
+   background-color: #000000;
+   padding-top: 90px;
+   padding-bottom: 105px;
+}
+
+.footer__inner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer__sponsor {
+   margin-bottom: 95px;
+}
+
+.footer__sponsor-link {
+   padding: 20px 48px;
+   background: #F4C635;
+   border-radius: 50px;
+   line-height: 198.4%;
+   text-decoration: none;
+   color: #000000;
+}
+
+.footer__newsletter {
+   background: rgba(217, 217, 217, 0.4);
+   margin-bottom: 90px;
+   color: #fff;
+   width: 100%;
+}
+
+.footer__newsletter-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 52px;
+   padding-bottom: 68px;
+}
+
+.footer__newsletter-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__newsletter-email {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.footer__newsletter-icon {
+   position: absolute;
+   border-radius: 0px !important;
+   right: 16px;
+}
+
+.footer__newsletter-input {
+   all: unset;
+   box-sizing:border-box;
+   padding: 10px 40px 10px 16px;
+   max-height: 33px;
+   width: 264px;
+   background: rgba(217, 217, 217, 0.5);
+   border-radius: 30px;
+}
+
+.footer__newsletter-input[type=text] {
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 198.4%;
+}
+
+.footer__newsletter-title {
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 198.4%;
+}
+
+.footer__newsletter-text {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 198.4%;
+}
+
+.footer__newsletter-input::placeholder {
+   color: rgba(255, 255, 255, 0.67);
+}
+
+.footer__socials {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   margin-bottom: 16px;
+}
+
+.footer__copyright {
+   max-width: 318px;
+   text-align: center;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 198.4%;
+   color: rgba(255, 255, 255, 0.67);
+}

@@ -1,0 +1,16 @@
+* {
+   box-sizing: border-box;
+   cursor: default;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $ff-base;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+html {
+	height: 100%;
+}
