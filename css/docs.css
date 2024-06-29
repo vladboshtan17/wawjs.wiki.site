@@ -1,0 +1,8 @@
+.new-head-wrapper {
+    background-image: url('/wiki/img/landing/l-head-reverse.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 190px 30px;
+    min-height: 100vh;
+}
